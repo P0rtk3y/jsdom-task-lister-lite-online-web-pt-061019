@@ -40,7 +40,7 @@ let buttonGenerator = (newTask, action) => {
 
 let deleteListItem = (itemClass) => {
   let lineItem = document.querySelector(`.${itemClass}`);
-  lineItem.parentNode.removeChild(lineItem);
+  lineItem.remove();
 }
 
 let buttonEventCallback = (e) => {
